@@ -1,15 +1,18 @@
-const Cube=require('../models/Cube')
+const Cube = require('../models/Cube')
 
-exports.getCreateCub=(req,res)=>{
+exports.getCreateCub = (req, res) => {
         res.render('create')
 }
 
-//save cube
-exports.postCreateCube=(req,res)=>{
-        let cube=new Cube(req.body);
+exports.postCreateCube = (req, res) => {
+        //save cube
+        const { name, description, imageUrl, difficultyLevel } = req.body;
+
+        let cube = new Cube(name, description, imageUrl, difficultyLevel);
+        
         Cube.save(cube);
 
-//redirect
-res.redirect('/');
+        //redirect
+        res.redirect('/');
 
 }
