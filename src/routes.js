@@ -5,6 +5,7 @@ const homeControllers = require('./controllers/homeController')
 
 router.get('/', homeControllers.getHomePage);
 router.get('/about', homeControllers.getAboutPage);
+router.get('/details/:cubeId',cubeController.getDetails)
 
 
 router.get('/create', cubeController.getCreateCub);
