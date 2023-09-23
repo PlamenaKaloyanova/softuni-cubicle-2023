@@ -8,5 +8,5 @@ router.get('/about', homeControllers.getAboutPage);
 
 
 router.get('/create', cubeController.getCreateCub);
-
+router.post('/create',cubeController.postCreateCube)
 module.exports = router;
