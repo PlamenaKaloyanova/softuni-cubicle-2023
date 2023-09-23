@@ -27,6 +27,13 @@
       "description": "normal",
       "imageUrl": "https://m.media-amazon.com/images/I/61X0g6GveJL.jpg",
       "difficultyLevel": "1"
+    },
+    {
+      "name": "Hard Cube",
+      "description": "Hard Cube",
+      "imageUrl": "https://engineerine.com/wp-content/uploads/2022/12/image-265-1024x1024.png",
+      "difficultyLevel": "6",
+      "id": 5
     }
   ]
 }
